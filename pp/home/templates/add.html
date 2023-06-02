@@ -1,0 +1,7 @@
+<body>
+    <form action="{% url 'add' %}" method="POST">
+        {% csrf_token %}
+        <input placeholder="이름을 입력하세요" name="name"/>
+        <button>최종등록</button>
+    </form>
+</body>

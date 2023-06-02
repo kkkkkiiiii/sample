@@ -1,3 +1,16 @@
 {% load static %}
 <h1>home 파일 완성</h1>
 <img src = "{% static 'home/image/문의.png' %} ">
+
+
+
+
+
+<h2>학생 이름을 입력하세요.</h2>
+<form action="{% url 'result' %}" method="POST">
+    {% csrf_token %}
+    <input name="username" placeholder="이름"/>
+    <br/>
+    <br/>
+    <button>체크하기</button>
+</form>
