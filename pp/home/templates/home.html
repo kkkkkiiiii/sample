@@ -12,5 +12,31 @@
     <input name="username" placeholder="이름"/>
     <br/>
     <br/>
-    <button>체크하기</button>
+    <button type="submit">체크하기</button>
 </form>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    정보 작성
+    <div class = "container">
+        <form action = "{% url 'create' %}">
+            이름:<input type="text" name="name">
+            <br>
+            전화번호:<input type="text" name="phone_number">
+            <br>
+            이메일:<input type="email" name="email">
+            <br>
+            <input type="submit" value="제출">
+        </form>
+    </div>
+</body>
+</html>
+
+
