@@ -8,7 +8,6 @@ from .models import User
 # Create your views here.
 
 def home(request) :
-    class_ob =Student.objects.all()
     return render(request, 'home.html')
 
 
@@ -17,13 +16,13 @@ def result(request):
     name = request.POST['username']
     Student = ['inu','james','bob']
     
+    
+
     if name in Student:
-        is_exist = True
+         return render(request,'error.html')
     else:
-        is_exist = False
-
-    return render(request, 'result.html',{'user_name':name, 'is_exist':is_exist})
-
+         return render(request, 'result.html',{'user_name':name})
+          
 
 def add(request):
     if request.method == 'POST':
@@ -41,4 +40,3 @@ def create(request):
     user.save()
 
     return redirect('/')
-
