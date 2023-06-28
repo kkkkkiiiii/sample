@@ -14,7 +14,7 @@ def home(request) :
 
 def result(request):
     name = request.POST['username']
-    Student = ['inu','james','bob']
+    Student = ['bob','inu','james','tom','mike']
     
     
 
