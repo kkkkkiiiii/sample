@@ -14,3 +14,7 @@ def detail(request, question_id):
     return HttpResponse("question %s." % question_id)
 # Create your views here.
 
+
+
+
+

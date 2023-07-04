@@ -10,5 +10,5 @@ urlpatterns = [
     path('result/', views.result, name='result'),
     path('add/', views.add, name='add'),
     path('create/', views.create, name='create')
-
+    
 ]
